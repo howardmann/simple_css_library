@@ -1,5 +1,7 @@
 # Simple CSS library
 
+Visit [hosted website](http://simple-css.surge.sh/) for template example
+
 ## Features
 - 12 column responsive grid layout
 - Responsive for desktop, tablet and phone
@@ -7,7 +9,6 @@
 - Column offset
 
 ## Updates Dec 2016
-- See index.html for documentation and examples of new features
 - Flexbox horizontal and vertical alignment (flex and flex-column | flex-center, flex-end, flex-space-betwen, flex-space-around)
 - Flexbox ordering for horizontal divs (note this does not currently have support for vertical ordering)
 - Sticky footer using flexbox. Add sticky-footer class to body and main
