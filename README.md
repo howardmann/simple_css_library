@@ -6,6 +6,12 @@
 - Horizontal and vertical text align
 - Column offset
 
+## Updates Dec 2016
+- See index.html for documentation and examples of new features
+- Flexbox horizontal and vertical alignment (flex and flex-column | flex-center, flex-end, flex-space-betwen, flex-space-around)
+- Flexbox ordering for horizontal divs (note this does not currently have support for vertical ordering)
+- Hiding divs based on tablet and phone media query (sm-hide, md-hide)
+
 ## Grid layout
 Prefix all grid columns with .col and specify the number of columns you would like your content to occupy (up to 12). Specify number of columns for small and medium screens (.sm-col & .md-col).
 
@@ -33,7 +39,5 @@ Add the .offset class with the number of cols you would like to offset by from t
 ## Text positioning
 Add div class of .left .right .center .justify to align text within divs horizontally.
 
-Add div class of .flex-valign to center align text vertically. Note: relies on flex-box which may not be compatible with older browsers.
-
 ## Author
-Howie_Burger (Sep 2016)
+Howie_Burger (2016)
