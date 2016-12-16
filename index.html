@@ -7,96 +7,197 @@
   <title>Simple CSS layout</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-
-    <h1>Simple CSS library (h1)</h1>
-
-    <h2>Headline Text (h2)</h2>
-    <h3>Subheading Text (h3)</h3>
-    <p>Nav Item 1 | Nav Item 2 | Nav Item 3 (p)</p>
-    <p>(p) This is body copy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolor, molestiae. Sunt non magni, beatae, harum blanditiis veritatis dignissimos temporibus doloribus assumenda odit doloremque quasi consequuntur aliquid. Vero, quod, dignissimos. </p>
-
-    <p><em>Emphasis italic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ut.</em></p>
-
-    <small>Byline Text. Lorem ipsum dolor sit amet.</small>
-
-    <p><strong>Bold text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
-    <ul>
-      <li>Bullet point 1</li>
-      <li>Bullet point 2</li>
-      <li>Bullet point 3</li>
-      <ul>
-        <li>Sub point</li>
-        <li>Sub point</li>
-      </ul>
-    </ul>
-
-
-    <h3>Grid layout</h3>
-
+<body class="sticky-footer">
+  <header>
     <div class="row">
-      <div class="col col-1">col-1</div>
-      <div class="col col-11">col-11</div>
-
-      <div class="col col-2">col-2</div>
-      <div class="col col-10">col-10</div>
-
-      <div class="col col-3">col-3</div>
-      <div class="col col-9">col-9</div>
-
-      <div class="col col-4">col-4</div>
-      <div class="col col-8">col-8</div>
-
-      <div class="col col-5">col-5</div>
-      <div class="col col-7">col-7</div>
-
-      <div class="col col-6">col-6</div>
-      <div class="col col-6">col-6</div>
-
-      <div class="col col-12">col-12</div>
-
-      <div class="col col-4">col-4</div>
-      <div class="col col-4">col-4</div>
-      <div class="col col-4">col-4</div>
-
-      <div class="col col-3">col-3</div>
-      <div class="col col-3">col-3</div>
-      <div class="col col-3">col-3</div>
-      <div class="col col-3">col-3</div>
+      <div class="container">
+        <span class="col col-6 logo">
+          header .logo
+        </span>
+        <nav class="col col-6 right">
+          <a href="#">nav a</a> |
+          <a href="#">nav a</a> |
+          <a href="#">nav a</a>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <h3>Responsive grid</h3>
+  <main class="sticky-footer">
+    <div class="container">
+      <h3>Typography</h3>
+      <h1>h1 - Simple CSS library</h1>
 
-    <div class="row">
-      <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3</div>
-      <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
-      <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
-      <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
+      <h2>h2 - Headline Text</h2>
+      <h3>h3 - Subheading Text</h3>
+      <p>p - Nav Item 1 | Nav Item 2 | Nav Item 3</p>
+      <p>p - This is body copy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolor, molestiae. Sunt non magni, beatae, harum blanditiis veritatis dignissimos temporibus doloribus assumenda odit doloremque quasi consequuntur aliquid. Vero, quod, dignissimos. </p>
+
+      <p><em> p em - Emphasis italic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ut.</em></p>
+
+      <small>small - Byline Text. Lorem ipsum dolor sit amet.</small>
+
+      <p><strong>p strong - Bold text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
+
+      <hr>
+
+      <h3>Grid layout</h3>
+
+      <div class="row">
+        <div class="col col-1">col-1</div>
+        <div class="col col-11">col-11</div>
+
+        <div class="col col-2">col-2</div>
+        <div class="col col-10">col-10</div>
+
+        <div class="col col-3">col-3</div>
+        <div class="col col-9">col-9</div>
+
+        <div class="col col-4">col-4</div>
+        <div class="col col-8">col-8</div>
+
+        <div class="col col-5">col-5</div>
+        <div class="col col-7">col-7</div>
+
+        <div class="col col-6">col-6</div>
+        <div class="col col-6">col-6</div>
+
+        <div class="col col-12">col-12</div>
+
+        <div class="col col-4">col-4</div>
+        <div class="col col-4">col-4</div>
+        <div class="col col-4">col-4</div>
+
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+      </div>
+
+      <hr>
+
+      <h3>Responsive grid</h3>
+
+      <div class="row">
+        <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3</div>
+        <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
+        <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
+        <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
+      </div>
+
+      <hr>
+
+      <h3>Offset grid</h3>
+
+      <div class="row">
+        <div class="col col-4 offset-4">col-4 offset-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col col-4">col-4</div>
+        <div class="col col-4 offset-4">col-4 offset-4</div>
+      </div>
+
+      <hr>
+
+      <h3>Flexbox horizontal align</h3>
+
+      <h4>flex flex-center</h4>
+      <div class="flex flex-center">
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+      </div>
+
+      <h4>flex flex-end</h4>
+      <div class="flex flex-end">
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+      </div>
+
+      <h4>flex flex-space-between</h4>
+      <div class="flex flex-space-between">
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+      </div>
+
+      <h4>flex flex-space-around</h4>
+      <div class="flex flex-space-around">
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+      </div>
+
+      <hr>
+
+      <h3>Flexbox vertical align (example height 300px)</h3>
+
+      <div class="col col-6 center" style="height: 300px">
+        <h4>Default - col col-6 center</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col col-6 center flex-column flex-center" style="height: 300px">
+        <h4>flex-column flex-center</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col col-6 center flex-column flex-end" style="height: 300px">
+        <h4>flex-column flex-end</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col col-6 center flex-column flex-space-around" style="height: 300px">
+        <h4>flex-column flex-space-around</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <hr>
+
+      <h3>Flexbox order</h3>
+
+      <h4>flex flex-order: default order 0</h4>
+      <div class="flex flex-order">
+        <div class="col col-2 ">1</div>
+        <div class="col col-2">2</div>
+        <div class="col col-2">3</div>
+        <div class="col col-2">4</div>
+        <div class="col col-2">5</div>
+        <div class="col col-2">6</div>
+      </div>
+
+      <h4>flex flex-order: backwards</h4>
+      <div class="flex flex-order">
+        <div class="col col-2 flex-order-6"><h4>flex-order-6</h4>1</div>
+        <div class="col col-2 flex-order-5"><h4>flex-order-5</h4>2</div>
+        <div class="col col-2 flex-order-4"><h4>flex-order-4</h4>3</div>
+        <div class="col col-2 flex-order-3"><h4>flex-order-3</h4>4</div>
+        <div class="col col-2 flex-order-2"><h4>flex-order-2</h4>5</div>
+        <div class="col col-2 flex-order-1"><h4>flex-order-1</h4>6</div>
+      </div>
+
+      <h4>flex flex-order: even first then odd</h4>
+      <div class="flex flex-order">
+        <div class="col col-2 flex-order-4"><h4>flex-order-4</h4>1</div>
+        <div class="col col-2 flex-order-1"><h4>flex-order-1</h4>2</div>
+        <div class="col col-2 flex-order-5"><h4>flex-order-5</h4>3</div>
+        <div class="col col-2 flex-order-2"><h4>flex-order-2</h4>4</div>
+        <div class="col col-2 flex-order-6"><h4>flex-order-6</h4>5</div>
+        <div class="col col-2 flex-order-3"><h4>flex-order-3</h4>6</div>
+      </div>
+
+  </main>
+
+  <footer>
+    <div class="row container">
+      <p>footer (sticky-footer)</p>
+      <p>Library by Howie_Burger (2016)</p>
     </div>
-
-    <h3>Offset grid</h3>
-
-    <div class="row">
-      <div class="col col-4 offset-4">col-4 offset-4</div>
-    </div>
-
-    <div class="row">
-      <div class="col col-4">col-4</div>
-      <div class="col col-4 offset-4">col-4 offset-4</div>
-    </div>
-
-    <h2 class="center">Headline Text (h3)</h2>
-
-    <div class="row">
-      <div class="col sm-col-12 col-6"><h3>Subheading (h3)</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat voluptates deleniti autem, explicabo, culpa magnam consequatur, libero ducimus necessitatibus magni. Ab veritatis incidunt, alias molestiae amet neque magni sequi.</p></div>
-      <div class="col sm-col-12 col-6"><h3>Subheading (h3)</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat voluptates deleniti autem, explicabo, culpa magnam consequatur, libero ducimus necessitatibus magni. Ab veritatis incidunt, alias molestiae amet neque magni sequi.</p></div>
-    </div>
-
-    <div class="row">
-      <div class="col col-12 center"><h3>Lorem ipsum dolor sit amet.</h3></div>
-    </div>
-  </div>
-
+  </footer>
 </body>
 </html>
