@@ -7,9 +7,11 @@
 - Column offset
 
 ## Grid layout
-Prefix all grid columns with .col and specify the number of columns you would like your content to occupy (up to 12). Specify number of grids for small and medium screens (.sm-col & .md-col).
+Prefix all grid columns with .col and specify the number of columns you would like your content to occupy (up to 12). Specify number of columns for small and medium screens (.sm-col & .md-col).
 
-Nest .col classes in a .row class if the number of columns are less than 12 (to prevent float bubbling). You may nest your rows and columns within a .container class which provides padding in desktop view.
+Nest .col classes in a .row class if the number of columns are less than 12 (to prevent float bubbling).
+
+You may nest your rows and columns within a .container class which provides padding in desktop view.
 
 Add the .offset class with the number of cols you would like to offset by from the left.
 
@@ -29,9 +31,9 @@ Add the .offset class with the number of cols you would like to offset by from t
 ```
 
 ## Text positioning
-Add class of .left .right .center .justify to align text within divs horizontally.
+Add div class of .left .right .center .justify to align text within divs horizontally.
 
-Add class of .flex-valign to center align text vertically. Note: relies on flex-box which may not be compatible with older browsers.
+Add div class of .flex-valign to center align text vertically. Note: relies on flex-box which may not be compatible with older browsers.
 
 ## Author
 Howie_Burger (Sep 2016)
