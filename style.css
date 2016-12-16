@@ -147,21 +147,30 @@ ul ul {
 
 /* Phone size */
 @media (max-width: 760px) {
+  .sm-hide {
+    display: none;
+  }
+
   .container {
     width: 100%;
+    margin-left: 0%;
   }
   .sm-col-12 {
     width: 100%;
-    margin-left: 0%;
   }
   .sm-col-6 {
     width: 50%;
-    margin-left: 0%;
+  }
+  .sm-col-6 {
+    width: 50%;
   }
 }
 
 /* iPad size */
 @media (max-width: 1200px) and (min-width: 761px) {
+  .md-hide {
+    display: none;
+  }
   .md-col-12 {
     width: 100%;
     margin-left: 0%;
