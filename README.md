@@ -18,7 +18,7 @@ You may nest your rows and columns within a `.container` class which provides pa
 
 Add the `.offset` class with the number of cols you would like to offset by from the left.
 
-Add .row-eq-height for equal column heights (Note: only use as needed, will sacrifice ability to set bottom margin and padding of col. Use div wrapper if needing to set these properties).
+Use `.row .row-eq-height` for equal column heights (Note: only use as needed, will sacrifice ability to set bottom margin and padding of col. Use div wrapper if needing to set these properties).
 
 ```html
 <div class="container">
