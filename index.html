@@ -77,7 +77,7 @@
       <hr>
 
       <h3>Responsive grid</h3>
-
+      <p>Wrap in <em>row</em> for clearfix to prevent bubbling</p>
       <div class="row">
         <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3</div>
         <div class="col sm-col-12 md-col-6 col-3">sm-col-12 md-col-6 col-3 </div>
@@ -96,6 +96,38 @@
       <div class="row">
         <div class="col col-4">col-4</div>
         <div class="col col-4 offset-4">col-4 offset-4</div>
+      </div>
+
+      <hr>
+
+      <h3>Row equal height columns</h3>
+      <p>Wrap in <em>.row .row-eq-height</em> for equal height columns within row wrapper.</p>
+      <p>Warning, this is a browser compatible fix using negative margins and padding. This solution will sacrifice the ability to set bottom margin and padding for the columns. Set margin and padding on wrapper divs. Use only as required.</p>
+
+      <h4>Example without equal row heights</h4>
+      <p>Wrap in only <em>.row</em></p>
+      <div class="row">
+        <div class="col col-6">
+          <p><strong>Title A</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dignissimos.</p>
+        </div>
+        <div class="col col-6">
+          <p><strong>Title B</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ut aut tempora, velit odit eligendi laborum explicabo neque vel molestiae voluptatum assumenda harum repellendus ab quae commodi, libero nam quaerat recusandae, numquam sapiente quod ducimus ullam nemo! Similique nulla, dolor.</p>
+        </div>
+      </div>
+
+      <h4>Example with equal row heights</h4>
+      <p>Wrap in <em>.row .row-eq-height</em></p>
+      <div class="row row-eq-height">
+        <div class="col col-6">
+          <p><strong>Title A</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dignissimos.</p>
+        </div>
+        <div class="col col-6">
+          <p><strong>Title B</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ut aut tempora, velit odit eligendi laborum explicabo neque vel molestiae voluptatum assumenda harum repellendus ab quae commodi, libero nam quaerat recusandae, numquam sapiente quod ducimus ullam nemo! Similique nulla, dolor.</p>
+        </div>
       </div>
 
       <hr>
@@ -133,30 +165,58 @@
       <hr>
 
       <h3>Flexbox vertical align (example height 300px)</h3>
-
+      <p>Prefix with <em>flex</em>. Use <em>flex-column-*</em> for setting the vertical alignment. Use <em>left, right or center</em> when horizontally aligning text and use <em>flex-left, flex-right, flex-center</em> when horizontally aligning non text items like div's and button tags</p>
       <div class="col col-6 center" style="height: 300px">
         <h4>Default - col col-6 center</h4>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="col col-6 center flex-column flex-center" style="height: 300px">
-        <h4>flex-column flex-center</h4>
+      <div class="col col-6 center flex flex-column-center" style="height: 300px">
+        <h4>flex flex-column-center center</h4>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="col col-6 center flex-column flex-end" style="height: 300px">
-        <h4>flex-column flex-end</h4>
+      <div class="col col-6 flex flex-column-bottom right" style="height: 300px">
+        <h4>flex flex-column-bottom right</h4>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="col col-6 center flex-column flex-space-around" style="height: 300px">
-        <h4>flex-column flex-space-around</h4>
+      <div class="col col-6 flex flex-column-space-between center" style="height: 300px">
+        <h4>flex flex-column-space-between center</h4>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
+
+      <div class="col col-6 flex flex-column-space-around center" style="height: 300px">
+        <h4>flex flex-column-space-around center</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col col-6 flex flex-column-center flex-row-center" style="height: 300px">
+        <h4>flex flex-column-center flex-row-center</h4>
+        <button>Button A</button>
+        <button>Button B</button>
+        <button>Button C</button>
+      </div>
+
+      <div class="col col-6 flex flex-column-center flex-row-right" style="height: 300px">
+        <h4>flex flex-column-center flex-row-right</h4>
+        <button>Button A</button>
+        <button>Button B</button>
+        <button>Button C</button>
+      </div>
+
+      <div class="col col-6 flex flex-column-space-around flex-row-left" style="height: 300px">
+        <h4>flex flex-column-space-around flex-row-left</h4>
+        <button>Button A</button>
+        <button>Button B</button>
+        <button>Button C</button>
+      </div>
+
       <hr>
 
       <h3>Flexbox order</h3>

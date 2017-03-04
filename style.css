@@ -135,6 +135,14 @@ a {
   margin-left: 8.333333333333332%;
   margin-left: calc(100%*1/12);
 }
+/* Equal column height fix. Use in addition to .row. Warning: you sacrifice ability to set col bottom margin and padding*/
+.row-eq-height {
+  overflow: hidden;
+}
+.row-eq-height [class*="col"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
 
 /* TEXT POSITIONING*/
 .left {
@@ -148,11 +156,6 @@ a {
 }
 .justify {
   text-align: justify;
-}
-.flex-valign {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* HEADER */
@@ -192,11 +195,7 @@ main.sticky-footer {
 .flex:after {
   content: none;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Horizontal alignment */
 .flex-center {
   justify-content: center;
 }
@@ -212,6 +211,44 @@ main.sticky-footer {
 .flex-space-around {
   justify-content: space-around;
 }
+/* Vertical alignment */
+.flex-column-center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-column-top {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-column-bottom {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flex-column-space-between {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-column-space-around {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-row-right {
+  align-items: flex-end;
+}
+
+.flex-row-left {
+  align-items: flex-start;
+}
+
+.flex-row-center {
+  align-items: center;
+}
+/* Ordering */
 .flex-order {
   order: 0;
 }
@@ -246,6 +283,7 @@ main.sticky-footer {
   .sm-hide {
     display: none;
   }
+  /* Grid system */
   .container {
     width: 100%;
     margin-left: 0%;
@@ -294,6 +332,20 @@ main.sticky-footer {
     width: 8.333333333333332%;
     width: calc(100%*1/12);
   }
+  /* Text positioning */
+  .sm-left {
+    text-align: left;
+  }
+  .sm-right {
+    text-align: right;
+  }
+  .sm-center {
+    text-align: center;
+  }
+  .sm-justify {
+    text-align: justify;
+  }
+  /* Flexbox ordering */
   .sm-flex-order-1 {
     order: 0;
   }
@@ -325,6 +377,7 @@ main.sticky-footer {
   .md-hide {
     display: none;
   }
+  /* Grid system */
   .md-col-12 {
     width: 100%;
   }
@@ -368,5 +421,18 @@ main.sticky-footer {
   .md-col-1 {
     width: 8.333333333333332%;
     width: calc(100%*1/12);
+  }
+  /* Text positioning */
+  .md-left {
+    text-align: left;
+  }
+  .md-right {
+    text-align: right;
+  }
+  .md-center {
+    text-align: center;
+  }
+  .md-justify {
+    text-align: justify;
   }
 }
