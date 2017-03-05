@@ -192,6 +192,9 @@ main.sticky-footer {
 .flex {
   display: flex;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .flex:after {
   content: none;
 }
